@@ -56,7 +56,7 @@ HashMap<String,String> map = new HashMap<>();
             String cmpName = temp.getKey();
             String xlsPrice = temp.getValue();
             String webPrice = hash.get(cmpName);
-            if(xlsPrice == webPrice){
+            if(xlsPrice != webPrice){
                 System.out.println("value on web incorrect");
             }
         }
